@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#navbarLinks {
+    display: none;
+}
+
+.menu-toggle:checked + .toggle-button + #navbarLinks {
+    display: flex;
+    justify-content: center;
+}
+
+#navbarLinks a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
